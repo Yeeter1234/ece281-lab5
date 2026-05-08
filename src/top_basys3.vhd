@@ -198,7 +198,7 @@ begin
 	   o_sel => w_an
 	);
 	
-	sevenseg_inst : sevenseg_decoder port map (
+	sevenseg_decoder_uut : sevenseg_decoder port map (
 	   i_Hex => w_sevenseg_in,
 	   o_seg_n => w_seg
 	);
