@@ -3,10 +3,10 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Fri May  8 07:53:50 2026
-# Process ID         : 26952
+# Start of session at: Fri May  8 07:38:36 2026
+# Process ID         : 7580
 # Current directory  : C:/USAFA/Spring 2026/ECE281/ece281-lab5
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent38744 C:\USAFA\Spring 2026\ECE281\ece281-lab5\basic_cpu.xpr
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent18540 C:\USAFA\Spring 2026\ECE281\ece281-lab5\basic_cpu.xpr
 # Log file           : C:/USAFA/Spring 2026/ECE281/ece281-lab5/vivado.log
 # Journal file       : C:/USAFA/Spring 2026/ECE281/ece281-lab5\vivado.jou
 # Running On         : C28-2TK41600RQ
@@ -19,19 +19,25 @@
 # Host memory        : 29827 MB
 # Swap memory        : 4563 MB
 # Total Virtual      : 34390 MB
-# Available Virtual  : 7289 MB
+# Available Virtual  : 6721 MB
 #-----------------------------------------------------------
 start_gui
 open_project {C:/USAFA/Spring 2026/ECE281/ece281-lab5/basic_cpu.xpr}
 INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/USAFA/Spring 2026/ECE281/ece281-lab5/basic_cpu.gen/sources_1'.
-CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/USAFA/Spring 2026/ECE281/ece281-lab5/basic_cpu.srcs/sources_1/imports/src/sevenseg_decoder.vhd'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1117.922 ; gain = 62.527
 update_compile_order -fileset sources_1
-export_ip_user_files -of_objects  [get_files {{C:/USAFA/Spring 2026/ECE281/ece281-lab5/basic_cpu.srcs/sources_1/imports/src/sevenseg_decoder.vhd}}] -no_script -reset -force -quiet
-remove_files  {{C:/USAFA/Spring 2026/ECE281/ece281-lab5/basic_cpu.srcs/sources_1/imports/src/sevenseg_decoder.vhd}}
-add_files -norecurse {{C:/USAFA/Spring 2026/ECE281/ece281-lab5/src/sevenseg_decoder.vhd}}
+import_files {{C:/USAFA/Spring 2026/ECE281/ece281-lab2/src/sevenseg_decoder.vhd}}
+add_files -norecurse {{C:/USAFA/Spring 2026/ECE281/ece281-lab5/basic_cpu.srcs/sources_1/imports/src/sevenseg_decoder.vhd}}
+WARNING: [filemgmt 56-12] File 'C:/USAFA/Spring 2026/ECE281/ece281-lab5/basic_cpu.srcs/sources_1/imports/src/sevenseg_decoder.vhd' cannot be added to the project because it already exists in the project, skipping this file
+set_property is_enabled false [get_files  {{C:/USAFA/Spring 2026/ECE281/ece281-lab5/basic_cpu.srcs/sources_1/imports/src/sevenseg_decoder.vhd}}]
+set_property is_enabled true [get_files  {{C:/USAFA/Spring 2026/ECE281/ece281-lab5/basic_cpu.srcs/sources_1/imports/src/sevenseg_decoder.vhd}}]
+set_property is_enabled false [get_files  {{C:/USAFA/Spring 2026/ECE281/ece281-lab5/basic_cpu.srcs/sources_1/imports/src/sevenseg_decoder.vhd}}]
+set_property is_enabled true [get_files  {{C:/USAFA/Spring 2026/ECE281/ece281-lab5/basic_cpu.srcs/sources_1/imports/src/sevenseg_decoder.vhd}}]
 update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May  8 07:47:52 2026...
