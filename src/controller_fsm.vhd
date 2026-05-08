@@ -39,7 +39,28 @@ end controller_fsm;
 
 architecture FSM of controller_fsm is
 
+    type sm_action is (load_A, load_B, load_op, execute);
+    signal f_Q, f_Q_next : sm_action;
+
 begin
 
+    process(i_adv, i_reset)
+    begin
+        if i_reset = '1' then 
+            f_Q <= load_A;
+        elsif rising_edge(i_adv) then 
+            f_Q <= f_Q_next;
+        end if;
+    end process;
+    
+    f_Q_next <= load_B when (f_Q = load_A) else
+                load_op when (f_Q = load_B) else
+                execute when (f_Q = load_op) else
+                load_A;
+                
+    o_cycle <= "0010" when (f_Q = load_B) else
+               "0100" when (f_Q = load_op) else
+               "1000" when (f_Q = execute) else
+               "0001";
 
 end FSM;

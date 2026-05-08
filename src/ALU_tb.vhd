@@ -12,7 +12,7 @@ library ieee;
 entity ALU_tb is
 end ALU_tb;
 
-architecture testbench of ALU_tb is
+    architecture testbench of ALU_tb is
 
     --------------------------------------------------------------------------
     --  DUT declaration

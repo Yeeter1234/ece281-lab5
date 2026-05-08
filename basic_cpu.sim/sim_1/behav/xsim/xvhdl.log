@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/USAFA/Spring 2026/ECE281/ece281-lab5/src/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/USAFA/Spring 2026/ECE281/ece281-lab5/src/cpa_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'cpa_adder'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/USAFA/Spring 2026/ECE281/ece281-lab5/src/ALU_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU_tb'
