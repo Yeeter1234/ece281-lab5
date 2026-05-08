@@ -138,8 +138,10 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../ece281-lab2/src/sevenseg_decoder.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/src/sevenseg_decoder.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ece281-lab2/src/sevenseg_decoder.vhd"/>
+          <Attr Name="ImportTime" Val="1778230328"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
